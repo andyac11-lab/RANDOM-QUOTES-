@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RANDOM QUOTES</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: purple;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        /* Header stays fixed */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: purple;
+            padding: 20px 10px;
+            text-align: center;
+            z-index: 1000;
+            border-bottom: 2px solid pink;
+        }
+
+        /* Website title */
+        header h1 {
+            font-size: 40px;
+            margin: 0;
+            color: pink;
+            font-weight: bold;
+            letter-spacing: 3px;
+        }
+
+        /* Small instructions */
+        header p {
+            font-size: 16px;
+            margin-top: 5px;
+            color: white;
+        }
+
+        /* Scrollable picture section */
+        .gallery-container {
+            margin-top: 130px; /* push below header */
+            padding: 10px;
+            flex: 1;
+            overflow-y: auto;
+        }
+
+        /* Grid for images */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px; /* ~1cm gap */
+        }
+
+        /* Image styling */
+        .gallery img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 3px solid pink;
+        }
+
+        /* Ad placeholder styling */
+        .ad {
+            background-color: #ffb6c1;
+            color: purple;
+            text-align: center;
+            height: 250px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            border-radius: 10px;
+            border: 3px solid pink;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Fixed Header -->
+    <header>
+        <h1>RANDOM QUOTES</h1>
+        <p>Send your Pic and quote on this WhatsApp contact +260777700123 so it can appear on this web</p>
+    </header>
+
+    <!-- Scrollable gallery -->
+    <div class="gallery-container">
+        <div class="gallery">
+
+            <!-- PIC SECTION: Replace jpg.1, jpg.2, etc. with your image URLs -->
+            <img src="jpg.1.jpg" alt="jpg.1">
+            <img src="jpg.2.jpg" alt="jpg.2">
+
+            <!-- Ad after every 2 pictures -->
+            <div class="ad">AD SPACE HERE</div>
+
+            <img src="jpg.3.jpg" alt="jpg.3">
+            <img src="jpg.4.jpg" alt="jpg.4">
+
+            <div class="ad">AD SPACE HERE</div>
+
+            <img src="jpg.5.jpg" alt="jpg.5">
+            <img src="jpg.6.jpg" alt="jpg.6">
+
+            <div class="ad">AD SPACE HERE</div>
+
+        </div>
+    </div>
+
+</body>
+  </html>
